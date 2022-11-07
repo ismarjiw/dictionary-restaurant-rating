@@ -21,8 +21,9 @@ new_restaurant = input('Please add another restaurant name: ')
 new_rating = input('What would you like to rate the restuarant? ')
 dictionary[new_restaurant] = new_rating 
 
-for restaurant, rating in dictionary.items():
+for restaurant, rating in sorted(dictionary.items()):
     print(f'{restaurant} is rated at {rating}. ')
+
 
 
 
